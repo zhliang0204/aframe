@@ -259,10 +259,10 @@ We create a wrapper entity around our links and attach the layout component
 using the `line` layout:
 
 ```html
-<a-entity id="links" layout="layout: line; margin: 1.5" position="-3 -1 -4">
-  <a-entity template="src: #plane" data-thumb="#city-thumb"></a-entity>
-  <a-entity template="src: #plane" data-thumb="#cubes-thumb"></a-entity>
-  <a-entity template="src: #plane" data-thumb="#sechelt-thumb"></a-entity>
+<a-entity id="links" layout="type: line; margin: 1.5" position="-3 -1 -4">
+  <a-entity template="src: #plane" position="0 0 0" data-thumb="#city-thumb"></a-entity>
+  <a-entity template="src: #plane" position="1 1 0 " data-thumb="#cubes-thumb"></a-entity>
+  <a-entity template="src: #plane" position="2 2 0" data-thumb="#sechelt-thumb"></a-entity>
 </a-entity>
 ```
 
